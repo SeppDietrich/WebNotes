@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Note</title>
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body id="all">
+    <script src="script.js"></script>
+    
+    <nav>
+    
+        <ul class="nav-list">
+            <li><a href="index.html" class="logo">NoteKeeper</a></li>
+            <li><a href="newnote.html">New Note</a></li>
+            
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <div class="note-box">
+            <textarea name="message" class="note" id="data">
+                The cat was playing in the garden.
+            </textarea>
+            <div class="buttons">
+                <button type="button" class="button" id="save" onclick="savefile()">Save</button> 
+                <label for="load" class="button">Load</label>
+                <input type="file" id="load" class="hidden" onchange="loadfile()"> 
+                <button type="button" class="button" id="share" onclick="sharefile()">Share</button> 
+            </div>
+        
+        </div>
+    </section>
+    <div id="body"></div>
+
+
+
+</body>
+</html>
