@@ -12,7 +12,7 @@ function savefile() {
     const note = document.getElementById("data");
     const body = document.getElementById("body");
 
-    // Create modal for filename input
+    // Create modal for filename inputs
     body.innerHTML = `
         <div class="hello" style="
             width: 400px; 
